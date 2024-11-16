@@ -7,6 +7,8 @@ import { ThemeParamsPage } from '@/pages/ThemeParamsPage.tsx';
 import { TONConnectPage } from '@/pages/TONConnectPage/TONConnectPage';
 import LandingPage from '@/pages/landingPage';
 import HomePage from '@/pages/homePage';
+import GetStartedPage from '@/pages/getStartedPage';
+import LeaderboardsPage from '@/pages/leaderboardsPage';
 
 interface Route {
   path: string;
@@ -20,7 +22,9 @@ export const routes: Route[] = [
   { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
   { path: '/theme-params', Component: ThemeParamsPage, title: 'Theme Params' },
   { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },
+  { path: '/get-started', Component: GetStartedPage, title: 'Get Started Page'},
   { path: '/landing', Component: LandingPage, title: 'Landing  Page'},
+  { path: '/leaderboards', Component: LeaderboardsPage, title: 'Leaderboards Page'},
   { path: '/home', Component: HomePage, title: 'Home  Page'},
   {
     path: '/ton-connect',

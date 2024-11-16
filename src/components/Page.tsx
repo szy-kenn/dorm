@@ -20,5 +20,9 @@ export function Page({ children, back = true }: PropsWithChildren<{
     backButton.hide();
   }, [back]);
 
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+    </>
+    );
 }
