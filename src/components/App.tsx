@@ -13,6 +13,13 @@ export function App() {
       appearance={isDark ? 'dark' : 'light'}
       platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
     >
+      {/* <HashRouter>
+        <div style={{display: "flex", flexDirection: "column", width: "100%", height: "100vh",  alignItems: "center",  justifyContent: "center"}}>
+          <Link to={"/landing"}>
+            <DormButton>Get Started</DormButton>
+          </Link>
+        </div>
+      </HashRouter> */}
       <HashRouter>
         <Routes>
           {routes.map((route) => <Route key={route.path} {...route} />)}

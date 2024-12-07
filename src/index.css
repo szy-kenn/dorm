@@ -9,4 +9,9 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+p {
+  margin: 0
 }

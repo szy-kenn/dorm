@@ -9,6 +9,10 @@ import LandingPage from '@/pages/landingPage';
 import HomePage from '@/pages/homePage';
 import GetStartedPage from '@/pages/getStartedPage';
 import LeaderboardsPage from '@/pages/leaderboardsPage';
+import LevelPage from '@/pages/levelPage';
+import LessonPage from '@/pages/lessonPage';
+import DoneLessonPage from '@/pages/DoneLessonPage';
+import TournamentStartPage from '@/pages/TournamentStartPage';
 
 interface Route {
   path: string;
@@ -24,7 +28,11 @@ export const routes: Route[] = [
   { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },
   { path: '/get-started', Component: GetStartedPage, title: 'Get Started Page'},
   { path: '/landing', Component: LandingPage, title: 'Landing  Page'},
+  { path: '/tournament-start', Component: TournamentStartPage, title: 'Tournament Start Page'},
   { path: '/leaderboards', Component: LeaderboardsPage, title: 'Leaderboards Page'},
+  { path: '/level', Component: LevelPage, title: 'Levels Page'},
+  { path: '/lesson', Component: LessonPage, title: 'Lesson Page'},
+  { path: '/lesson-done', Component: DoneLessonPage, title: 'Done Lesson Page'},
   { path: '/home', Component: HomePage, title: 'Home  Page'},
   {
     path: '/ton-connect',
